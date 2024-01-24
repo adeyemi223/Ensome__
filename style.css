@@ -15,6 +15,7 @@
     --secondary-color:#002B4E;
     --primary-color:#185cff;
     --bg-color:#c0dcec;
+    --lightBg-color:#F1F6FA;
     --text-color:#292d33;
     --bg_text-color:#fff;
     --lightText-color:#9497a1;
@@ -105,12 +106,10 @@ nav ul{
 }
 
 /* ============section__one=============== */
-section{
-    padding: 140px 15% 50px;
-}
 
 #Home{
     background: var(--secondary-color);
+    padding: 140px 15% 50px;
 }
 
 .home_container{
@@ -181,53 +180,105 @@ section{
 }
 
 /* =============section__two=============== */
-.solution__container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px,auto));
-    gap: 2rem;
+
+#Solutions{
+    padding: 80px 15% 50px;
+    background: var(--lightBg-color-color);
 }
 
-.solFirst_grid h2{
-    font-size: 2.5rem;
-    font-weight: 700;
+.solution_firstGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px,auto));
+    gap: 1rem;
+}
+
+.solText h3{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.3;
     color: var(--text-color);
-    margin-bottom: 1rem;
 }
 
 .line{
-    width: 100px;
-    height: 3px;
-    border-radius: 6px;
-    margin-top: -10px;
-    margin-bottom: 2rem;
+    width: 70px;
+    height: 4px;
     background: var(--primary-color);
-}
-
-.solFirst_grid p{
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 2rem;
-}
-
-.solFirst_grid button{
-    padding: 0.85rem 2rem;
-    font-size: 1rem;
-    font-weight: 400;
-    border: none;
+    margin-bottom: 1rem;
+    margin-top: 10px;
     border-radius: 6px;
+}
+
+.solText p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.solText button{
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
     color: var(--bg_text-color);
     background: var(--primary-color);
-    box-shadow: 8px 4px 10px #c0dcec;
-}
-
-.solFirst_grid button:hover{
-    background-color: #3a72f5;
+    border: none;
+    border-radius: 6px;
     cursor: pointer;
 }
 
-.sol_image img{
+.solText button:hover{
+    background-color: #3a72f5;
+}
+
+.solImg img{
     width: 100%;
     max-width: 500px;
-    height: auto;
+    /* margin-top: 1.5rem; */
+}
+
+#page{
+    padding: 80px 15% 50px;
+    background: var(--bg_text-color);
+}
+
+.pageHeader h4{
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.lines{
+    width: 100px;
+    height: 5px;
+    background: var(--primary-color);
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+
+.pageGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.eachGrid_con p{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.eachGrid_con small{
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.benefits{
+    padding-right: 15%;
 }
