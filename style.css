@@ -107,10 +107,12 @@ nav ul {
 }
 
 /* ============section__one=============== */
+section {
+  padding: 140px 15% 50px;
+}
 
 #Home {
   background: var(--secondary-color);
-  padding: 140px 15% 50px;
 }
 
 .home_container {
@@ -183,7 +185,7 @@ nav ul {
 /* =============section__two=============== */
 
 #Solutions {
-  padding: 80px 15% 50px;
+  /* padding: 80px 15% 50px; */
   background: var(--lightBg-color-color, #f1f6fa);
 }
 
@@ -191,6 +193,10 @@ nav ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, auto));
   gap: 1rem;
+}
+
+#Solu_tions {
+  margin-top: 5rem;
 }
 
 .solText h3 {
@@ -243,7 +249,7 @@ nav ul {
 }
 
 #page {
-  padding: 80px 15% 50px;
+  /* padding: 80px 15% 50px; */
   background: var(--bg_text-color);
 }
 
@@ -333,7 +339,7 @@ nav ul {
 
 /* =============what customer say=============== */
 .customer {
-  padding: 80px 15% 80px;
+  /* padding: 80px 15% 80px; */
   background: var(--lightBg-color-color, #f1f6fa);
 }
 
@@ -406,10 +412,6 @@ nav ul {
 }
 
 /* ======================our pricing================= */
-.pricing {
-  padding: 80px 15% 80px;
-}
-
 .pricing_header {
   display: flex;
   align-items: center;
@@ -423,34 +425,34 @@ nav ul {
   letter-spacing: -0.57px;
 }
 
-.pricing_btn button{
-    display: inline-block;
+.pricing_btn button {
+  display: inline-block;
 }
 
-.price_btn1{
-    width: 120px;
-    height: 50px;
-    border: none;
-    border-radius: 18px;
-    font-size: 1rem;
-    font-weight: 400;
-    background: var(--primary-color);
-    color: var(--bg_text-color);
+.price_btn1 {
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 18px;
+  font-size: 1rem;
+  font-weight: 400;
+  background: var(--primary-color);
+  color: var(--bg_text-color);
 }
 
-.price_btn1:hover{
-    background-color: #3a72f5;
-    cursor: pointer;
+.price_btn1:hover {
+  background-color: #3a72f5;
+  cursor: pointer;
 }
 
-.price_btn2{
-    width: 120px;
-    height: 50px;
-    border: none;
-    border-radius: 18px;
-    font-size: 1rem;
-    font-weight: 400;
-    background: var(--lightBg-color,#f1f6fa);
-    color: #000;
-    cursor: pointer;
+.price_btn2 {
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 18px;
+  font-size: 1rem;
+  font-weight: 400;
+  background: var(--lightBg-color, #f1f6fa);
+  color: #000;
+  cursor: pointer;
 }
